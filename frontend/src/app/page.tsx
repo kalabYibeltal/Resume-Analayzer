@@ -77,7 +77,7 @@ const handleSubmit = async (event: FormEvent) => {
     formData.append("jobDescription", text);
 
     try {
-        const response = await fetch(`${API_URL_local}`, {
+        const response = await fetch(`${API_URL}`, {
             //  const response = await fetch(`${API_URL}text_analysis_whisper/`, { 
             //for using the Whisper engine but it is too slow if you have less than 8 GB GPU
             // headers: {'content-type': 'multipart/form-data', 'boundary': '----WebKitFormBoundary7MA4YWxkTrZu0gW'},
